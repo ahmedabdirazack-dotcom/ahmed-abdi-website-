@@ -3,247 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ahmed Abdirizak builds attractive local business websites for stores, cafes, and service providers in Garowe and the surrounding region.">
-    <title>Ahmed Abdirizak | Local Business Web Design</title>
+    <meta name="description" content="Ahmed Abdirizak creates premium, mobile-friendly websites for local businesses in Garowe and beyond.">
+    <title>Ahmed Abdirizak | Premium Web Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="navbar">
-        <div class="container navbar-inner">
-            <a class="brand" href="#home"><span>Ahmed</span> <span class="brand-last">Abdirizak</span></a>
-            <nav class="nav-links" aria-label="Primary navigation">
+    <header class="site-header">
+        <nav class="floating-nav" aria-label="Primary navigation">
+            <a class="brand" href="#home">Ahmed Abdirizak</a>
+            <div class="nav-links">
                 <a href="#home">Home</a>
-                <a href="#about">About</a>
                 <a href="#services">Services</a>
+                <a href="#work">Work</a>
                 <a href="#pricing">Pricing</a>
                 <a href="#contact">Contact</a>
-            </nav>
-            <a class="btn btn-primary" href="#contact">Get Started</a>
-        </div>
+            </div>
+            <a class="nav-cta" href="#contact">Start</a>
+        </nav>
     </header>
 
     <main>
-        <section id="home" class="hero">
-            <div class="container hero-grid">
-                <div class="hero-copy">
-                    <h1>Professional websites for local businesses that want more customers.</h1>
-                    <p>I build fast, modern websites for shops, caf&eacute;s, salons, and service providers in Garowe, helping your business look trusted and easy to contact.</p>
-                    <div class="hero-actions">
-                        <a class="btn btn-primary" href="#services">See Services</a>
-                        <a class="btn btn-outline" href="#projects">View Projects</a>
-                    </div>
-                </div>
-                <div class="hero-visual">
-                    <div class="hero-card">
-                        <div class="card-header">
-                            <span class="card-title">Ahmed Abdirizak</span>
-                            <span class="card-status">Available</span>
-                        </div>
-                        <div class="hero-profile">
-                            <img src="ahmed-me.jpg" alt="Portrait of Ahmed Abdirizak">
-                        </div>
-                        <h3>Web designer for local businesses in Garowe.</h3>
-                        <div class="hero-stats">
-                            <div>
-                                <strong>Fast</strong>
-                                <span>Launch ready</span>
-                            </div>
-                            <div>
-                                <strong>Mobile</strong>
-                                <span>First design</span>
-                            </div>
-                        </div>
-                    </div>
+        <section id="home" class="hero section-shell">
+            <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+            <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+
+            <div class="hero-content">
+                <p class="eyebrow">Premium websites for local businesses</p>
+                <h1>Elegant websites that make your business feel trusted from the first click.</h1>
+                <p class="hero-copy">I design fast, responsive websites for shops, cafes, salons, and service providers in Garowe, built to look premium and turn visitors into customers.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-shiny" href="#contact">Build My Website</a>
+                    <a class="btn btn-ghost" href="#work">View Work</a>
                 </div>
             </div>
-        </section>
 
-        <section id="about" class="section about">
-            <div class="container about-grid">
-                <div class="section-head section-head-left">
-                    <span class="section-label">About Me</span>
-                    <h2>Creating polished local websites that help businesses grow.</h2>
-                    <p>Ahmed Abdirizak helps shops, restaurants, and service providers present their brand clearly online with attractive websites, contact-ready layouts, and easy navigation.</p>
+            <div class="hero-showcase glass-card">
+                <div class="portrait-frame">
+                    <img src="ahmed-me.jpg" alt="Portrait of Ahmed Abdirizak">
                 </div>
-                <div class="about-profile-card">
-                    <div class="profile-image">
-                        <img src="ahmed-me.jpg" alt="Portrait of Ahmed Abdirizak">
+                <div class="showcase-copy">
+                    <span>Available for projects</span>
+                    <h2>Ahmed Abdirizak</h2>
+                    <p>Web designer focused on polished local business websites with clean layouts, fast loading, and mobile-first experiences.</p>
+                </div>
+                <div class="mini-stats">
+                    <div>
+                        <strong>Mobile</strong>
+                        <span>First</span>
                     </div>
-                    <div class="profile-content">
-                        <span class="badge-founder">The Founder</span>
-                        <h3>Ahmed Abdirizak</h3>
-                        <p>As a local web designer in Garowe, I build websites for shops, cafes, and services that need a strong online presence. I focus on fast, easy-to-manage sites that help small businesses grow.</p>
+                    <div>
+                        <strong>Fast</strong>
+                        <span>Launch</span>
+                    </div>
+                    <div>
+                        <strong>Clean</strong>
+                        <span>Design</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="services" class="section services">
-            <div class="container">
-                <div class="section-head">
-                    <span class="section-label">Services</span>
-                    <h2>I help local businesses in Garowe and beyond build modern websites that attract customers and grow their brand.</h2>
-                </div>
-                <div class="services-grid">
-                    <article class="service-card">
-                        <div class="service-icon" aria-hidden="true">&#127760;</div>
-                        <h3>Local Business Websites</h3>
-                        <span class="service-subtitle">Web</span>
-                        <p>Modern websites for shops, cafes, salons, and small businesses that make it easy for customers to learn what you offer.</p>
-                    </article>
-                    <article class="service-card">
-                        <div class="service-icon" aria-hidden="true">&#127912;</div>
-                        <h3>Brand-Forward Design</h3>
-                        <span class="service-subtitle">Brand</span>
-                        <p>Clear brand presentation, strong imagery, and easy navigation help your business feel trustworthy and professional online.</p>
-                    </article>
-                    <article class="service-card">
-                        <div class="service-icon" aria-hidden="true">&#128736;</div>
-                        <h3>Local Launch & Support</h3>
-                        <span class="service-subtitle">Support</span>
-                        <p>Website setup, publishing, and support tailored for the Garowe market, with attention to local payment flows and customer needs.</p>
-                    </article>
-                </div>
+        <section id="services" class="section-shell">
+            <div class="section-heading">
+                <p class="eyebrow">Services</p>
+                <h2>Everything your business needs to look sharp online.</h2>
+                <p>From first impression to contact flow, every section is designed to help customers understand, trust, and reach your business quickly.</p>
+            </div>
+
+            <div class="bento-grid services-bento">
+                <article class="bento-card bento-large glass-card">
+                    <span class="card-kicker">Website Design</span>
+                    <h3>Premium landing pages for local brands.</h3>
+                    <p>Modern homepages, service pages, contact sections, and clear layouts that make your business feel professional.</p>
+                </article>
+                <article class="bento-card glass-card">
+                    <span class="card-kicker">Mobile First</span>
+                    <h3>Looks clean on every screen.</h3>
+                    <p>Responsive layouts that stack beautifully on phones and stay polished on laptops.</p>
+                </article>
+                <article class="bento-card glass-card">
+                    <span class="card-kicker">Brand Presence</span>
+                    <h3>Trust-focused visuals.</h3>
+                    <p>Careful spacing, typography, colors, and calls to action that support your business goals.</p>
+                </article>
             </div>
         </section>
 
-        <section id="projects" class="section projects">
-            <div class="container">
-                <div class="section-head section-head-left">
-                    <span class="section-label">Projects</span>
-                    <h2>Websites built for local businesses and customer-first experiences.</h2>
-                    <p>Examples of polished online presences designed to help stores, caf&eacute;s, and service providers turn visitors into customers.</p>
-                </div>
-                <div class="projects-grid">
-                    <article class="project-card">
-                        <div class="project-preview project-preview-cafe">
-                            <span>Menu</span>
-                            <strong>Restaurant &amp; Caf&eacute;</strong>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-badge">Local Client</div>
-                            <h3>Restaurant &amp; Caf&eacute; Website</h3>
-                            <p>A clean, mobile-first website for a neighborhood caf&eacute; with menu highlights, contact details, and a reservation-ready layout.</p>
-                            <span class="status-badge">Status: Ready to Launch</span>
-                        </div>
-                    </article>
-                    <article class="project-card">
-                        <div class="project-preview project-preview-service">
-                            <span>Bookings</span>
-                            <strong>Service Website</strong>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-badge">Service Brand</div>
-                            <h3>Local Service Landing Page</h3>
-                            <p>A direct landing page structure for a service provider with clear offers, trust signals, pricing, and fast contact paths.</p>
-                            <span class="status-badge">Status: Design Concept</span>
-                        </div>
-                    </article>
-                </div>
+        <section id="work" class="section-shell">
+            <div class="section-heading">
+                <p class="eyebrow">Portfolio</p>
+                <h2>Bento-style concepts for real customer journeys.</h2>
+                <p>Examples of the kind of structure your website can use: clear offers, strong credibility, and easy contact paths.</p>
+            </div>
+
+            <div class="bento-grid work-bento">
+                <article class="bento-card project-card glass-card">
+                    <div class="project-visual cafe-visual">
+                        <span>Restaurant</span>
+                    </div>
+                    <h3>Restaurant and cafe website</h3>
+                    <p>A stylish menu-focused website with location, hours, highlights, and fast reservation/contact access.</p>
+                </article>
+                <article class="bento-card project-card glass-card bento-tall">
+                    <div class="project-visual service-visual">
+                        <span>Services</span>
+                    </div>
+                    <h3>Local service landing page</h3>
+                    <p>A direct sales page with service details, trust signals, pricing, and a simple message flow for new customers.</p>
+                </article>
+                <article class="bento-card glass-card">
+                    <span class="card-kicker">Experience</span>
+                    <h3>Built for clarity.</h3>
+                    <p>Visitors should know what you offer, why it matters, and how to contact you in seconds.</p>
+                </article>
             </div>
         </section>
 
-        <section id="pricing" class="section pricing">
-            <div class="container">
-                <div class="section-head">
-                    <span class="section-label">Pricing Plans</span>
-                    <h2>Choose a plan that fits your business needs in Garowe and beyond.</h2>
-                </div>
-                <div class="pricing-grid">
-                    <article class="pricing-card">
-                        <h3>Basic</h3>
-                        <div class="price">$100</div>
-                        <ul>
-                            <li>1-3 pages</li>
-                            <li>Mobile friendly</li>
-                            <li>Simple design</li>
-                            <li>Contact info</li>
-                        </ul>
-                        <a class="btn btn-primary" href="#contact">Contact Me</a>
-                    </article>
-                    <article class="pricing-card popular">
-                        <div class="popular-badge">Most Popular</div>
-                        <h3>Standard</h3>
-                        <div class="price">$200</div>
-                        <ul>
-                            <li>4-6 pages</li>
-                            <li>Modern design</li>
-                            <li>Contact form</li>
-                            <li>Basic SEO</li>
-                        </ul>
-                        <a class="btn btn-primary" href="#contact">Contact Me</a>
-                    </article>
-                    <article class="pricing-card">
-                        <h3>Premium</h3>
-                        <div class="price">$400</div>
-                        <ul>
-                            <li>Full website</li>
-                            <li>Custom design</li>
-                            <li>Fast loading</li>
-                            <li>WhatsApp integration</li>
-                            <li>SEO setup</li>
-                        </ul>
-                        <a class="btn btn-primary" href="#contact">Contact Me</a>
-                    </article>
-                </div>
+        <section id="pricing" class="section-shell">
+            <div class="section-heading">
+                <p class="eyebrow">Pricing</p>
+                <h2>Simple website packages for growing businesses.</h2>
+                <p>Choose a starting point based on the size of your website and how polished you want the final experience to be.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <article class="price-card glass-card">
+                    <span class="card-kicker">Basic</span>
+                    <h3>$100</h3>
+                    <ul>
+                        <li>1-3 pages</li>
+                        <li>Mobile responsive</li>
+                        <li>Simple clean design</li>
+                        <li>Contact information</li>
+                    </ul>
+                    <a class="btn btn-ghost" href="#contact">Choose Basic</a>
+                </article>
+                <article class="price-card featured glass-card">
+                    <span class="featured-badge">Most Popular</span>
+                    <span class="card-kicker">Standard</span>
+                    <h3>$200</h3>
+                    <ul>
+                        <li>4-6 pages</li>
+                        <li>Premium visual design</li>
+                        <li>Contact form layout</li>
+                        <li>Basic SEO structure</li>
+                    </ul>
+                    <a class="btn btn-shiny" href="#contact">Choose Standard</a>
+                </article>
+                <article class="price-card glass-card">
+                    <span class="card-kicker">Premium</span>
+                    <h3>$400</h3>
+                    <ul>
+                        <li>Full website</li>
+                        <li>Custom sections</li>
+                        <li>Fast loading structure</li>
+                        <li>WhatsApp-ready contact</li>
+                    </ul>
+                    <a class="btn btn-ghost" href="#contact">Choose Premium</a>
+                </article>
             </div>
         </section>
 
-        <section class="section contact" id="contact">
-            <div class="container contact-wrap">
-                <div class="section-head">
-                    <span class="section-label">Contact</span>
-                    <h2>Let's build your next local business website.</h2>
-                    <p>Send a message and I'll help you shape a modern, easy-to-use website tailored for your customers.</p>
+        <section id="contact" class="section-shell contact-section">
+            <div class="contact-panel glass-card">
+                <div>
+                    <p class="eyebrow">Contact</p>
+                    <h2>Ready for a website that feels premium?</h2>
+                    <p>Tell me about your business and I will help you shape a polished online presence that customers can trust.</p>
+                    <div class="contact-links">
+                        <a href="tel:+252906246788">+252 906 246 788</a>
+                        <a href="mailto:ahmedabdirazack@gmail.com">ahmedabdirazack@gmail.com</a>
+                        <span>Garowe, Puntland, Somalia</span>
+                    </div>
                 </div>
-                <div class="contact-info-grid">
-                    <article class="contact-info-card">
-                        <div class="contact-info-icon" aria-hidden="true">&#9742;</div>
-                        <div>
-                            <h3>Phone</h3>
-                            <a href="tel:+252906246788">+252 906 246 788</a>
-                        </div>
-                    </article>
-                    <article class="contact-info-card">
-                        <div class="contact-info-icon" aria-hidden="true">&#9993;</div>
-                        <div>
-                            <h3>Email</h3>
-                            <a href="mailto:ahmedabdirazack@gmail.com">ahmedabdirazack@gmail.com</a>
-                        </div>
-                    </article>
-                    <article class="contact-info-card">
-                        <div class="contact-info-icon" aria-hidden="true">&#9906;</div>
-                        <div>
-                            <h3>Location</h3>
-                            <p>Garowe, Puntland, Somalia</p>
-                        </div>
-                    </article>
-                </div>
-                <div class="contact-form-card">
-                    <form class="contact-form" action="mailto:ahmedabdirazack@gmail.com" method="post" enctype="text/plain">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your full name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" placeholder="Tell me about your project" required></textarea>
-                        </div>
-                        <button class="btn btn-primary" type="submit">Send Message</button>
-                    </form>
-                </div>
+
+                <form class="contact-form" action="mailto:ahmedabdirazack@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Tell me about your project" required></textarea>
+
+                    <button class="btn btn-shiny" type="submit">Send Message</button>
+                </form>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <div class="container footer-inner">
-            <p>&copy; 2026 Ahmed Abdirizak. Local business websites designed for real customers.</p>
-        </div>
+        <p>&copy; 2026 Ahmed Abdirizak. Premium local business websites.</p>
     </footer>
 </body>
 </html>
