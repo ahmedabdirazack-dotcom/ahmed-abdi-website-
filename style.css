@@ -26,6 +26,12 @@
     padding: 0;
 }
 
+*,
+*::before,
+*::after {
+    min-width: 0;
+}
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 110px;
@@ -48,6 +54,7 @@ body {
 img {
     display: block;
     max-width: 100%;
+    height: auto;
 }
 
 a {
@@ -411,6 +418,17 @@ h1 {
     font-size: 1.05rem;
 }
 
+.section-heading h2,
+.contact-panel h2,
+.bento-card h3,
+.price-card h3,
+.showcase-copy h2,
+.hero-copy,
+.contact-links a,
+.contact-links span {
+    overflow-wrap: anywhere;
+}
+
 .bento-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -579,6 +597,7 @@ h1 {
 .contact-links a,
 .contact-links span {
     width: fit-content;
+    max-width: 100%;
     transition: color 0.3s var(--ease);
 }
 
@@ -677,10 +696,12 @@ h1 {
 @media (max-width: 720px) {
     :root {
         --space-section: 84px;
+        --radius-lg: 26px;
+        --radius-md: 22px;
     }
 
     html {
-        scroll-padding-top: 96px;
+        scroll-padding-top: 136px;
     }
 
     .site-header {
@@ -698,6 +719,7 @@ h1 {
     .brand {
         padding-left: 8px;
         font-size: 0.95rem;
+        white-space: nowrap;
     }
 
     .nav-links {
@@ -705,7 +727,10 @@ h1 {
         grid-row: 2;
         max-width: none;
         width: 100%;
+        gap: 2px;
         padding: 2px;
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
     }
 
     .nav-links a {
@@ -726,11 +751,22 @@ h1 {
 
     .hero {
         min-height: auto;
-        padding-top: 154px;
+        padding-top: 176px;
     }
 
     h1 {
-        font-size: clamp(2.55rem, 13vw, 4.25rem);
+        font-size: clamp(2.38rem, 12vw, 4.25rem);
+        line-height: 1.02;
+    }
+
+    .hero-copy,
+    .section-heading p:not(.eyebrow),
+    .contact-panel p {
+        font-size: 1rem;
+    }
+
+    .hero-content {
+        margin-bottom: 40px;
     }
 
     .hero-actions,
@@ -754,6 +790,10 @@ h1 {
     .portrait-frame {
         min-height: 280px;
         border-radius: 22px;
+    }
+
+    .mini-stats {
+        gap: 10px;
     }
 
     .bento-grid {
@@ -780,19 +820,76 @@ h1 {
         gap: 34px;
         border-radius: 26px;
     }
+
+    .contact-form input,
+    .contact-form textarea {
+        border-radius: 16px;
+        padding: 15px 16px;
+    }
 }
 
 @media (max-width: 420px) {
+    :root {
+        --space-section: 72px;
+    }
+
+    html {
+        scroll-padding-top: 126px;
+    }
+
+    .site-header {
+        padding: 0 10px;
+    }
+
+    .floating-nav {
+        gap: 8px;
+        padding: 8px;
+        border-radius: 22px;
+    }
+
     .brand {
         font-size: 0.88rem;
+        padding-left: 6px;
+    }
+
+    .nav-cta {
+        padding: 8px 12px;
+        font-size: 0.8rem;
     }
 
     .nav-links a {
         font-size: 0.8rem;
+        padding: 7px 10px;
     }
 
     .eyebrow {
         font-size: 0.72rem;
+        max-width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero {
+        padding-top: 162px;
+    }
+
+    h1 {
+        font-size: clamp(2.05rem, 12vw, 3rem);
+    }
+
+    .hero-copy {
+        margin-top: 20px;
+    }
+
+    .hero-actions {
+        margin-top: 28px;
+        gap: 10px;
+    }
+
+    .btn {
+        min-height: 50px;
+        padding: 0 16px;
+        font-size: 0.94rem;
     }
 
     .portrait-frame {
@@ -801,5 +898,56 @@ h1 {
 
     .mini-stats div {
         padding: 16px;
+    }
+
+    .section-heading {
+        margin-bottom: 32px;
+    }
+
+    .bento-card,
+    .price-card,
+    .contact-panel {
+        padding: 20px;
+    }
+
+    .project-visual {
+        min-height: 155px;
+        padding: 18px;
+    }
+
+    .project-visual span {
+        font-size: 1.35rem;
+    }
+
+    .featured-badge {
+        position: static;
+        width: fit-content;
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 350px) {
+    .brand {
+        font-size: 0.8rem;
+    }
+
+    .nav-cta {
+        padding: 7px 10px;
+    }
+
+    .nav-links a {
+        padding: 7px 9px;
+    }
+
+    .hero {
+        padding-top: 156px;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    .portrait-frame {
+        min-height: 210px;
     }
 }
