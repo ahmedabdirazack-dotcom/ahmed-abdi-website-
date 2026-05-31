@@ -165,13 +165,13 @@ textarea {
 
 .hero-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.7fr);
+    grid-template-columns: minmax(0, 1fr);
     align-items: center;
-    gap: clamp(52px, 8vw, 118px);
+    gap: 0;
 }
 
 .hero-copy {
-    max-width: 780px;
+    max-width: 900px;
 }
 
 .eyebrow {
